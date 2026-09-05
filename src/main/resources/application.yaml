@@ -1,3 +1,18 @@
 spring:
   application:
     name: Acservice
+fcubs:
+  username: ${FCUBS_USERNAME:TAKEON02}
+  password: ${FCUBS_PASSWORD:Oracle@123}
+  service: ${FCUBS_SERVICE:FCUBSAccService}
+  account-service-url: http://10.1.12.71:8101/FCUBSACService/FCUBSACService
+  source: ${FCUBS_SOURCE:FCUBS}
+  ubscomp: ${FCUBS_UBSCOMP:FCUBS}
+  msgid: ${FCUBS_MSGID:3211411}
+  correlid: ${FCUBS_CORRELID:}
+  userid: ${FCUBS_USERID:${FCUBS_USERNAME:TAKEON02}}
+  moduleid: ${FCUBS_MODULEID:}
+  branch: ${FCUBS_BRANCH:100}
+
+server:
+  port: 9083
